@@ -1,0 +1,439 @@
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #FFE5AA;
+  }
+  .SukiyakiPot {
+    width: 360px;
+    position: relative;
+    &_head {
+      width: 100%;
+      height: 280px;
+      border-radius: 50%;
+      background: #3c1f1f;
+      box-shadow: inset 0px 24px 0 #444;
+      border: solid 3px #444;
+      box-sizing: border-box;
+    }
+    &_body {
+      width: 99%;
+      height: 230px;
+      margin: 0 auto;
+      background: #444;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -70px;
+      border-bottom-right-radius: 100%;
+      border-bottom-left-radius: 100%;
+      z-index: -1;
+    }
+    &_outside {
+      width: 130%;
+      height: 100px;
+      position: absolute;
+      background: #444;
+      transform: translateX(-10%);
+      border-radius: 30%;
+      z-index: -2;
+      top: 110px;
+    }
+  }
+  
+  .SukiyakiEntry {
+    width: 100%;
+    height: 274px;
+    position: relative;
+    &_item {
+      position: absolute;
+      z-index: 3;
+    }
+  }
+  
+  /*niku*/
+  $niku: #921717;
+  $nikuShadow: #631b07;
+  
+  .niku {
+    width: 120px;
+    height: 230px;
+    background: $niku;
+    border-radius: 100px 41px 120px 34px;
+    box-shadow: inset -6px -5px 0 $nikuShadow;
+    &-1 {
+      bottom: 50px;
+      left: 70px;
+      transform: rotate(45deg) scale(0.7);
+      z-index: 4;
+    }
+    &-2 {
+      top: 0px;
+      left: 25px;
+      transform: rotate(20deg) scale(0.6);
+      z-index: 10;
+    }
+    &-3 {
+      bottom: 0;
+      left: 50px;
+      transform: rotate(62deg) scale(0.8);
+    }
+  }
+  
+  /*negi*/
+  $negi: #e6e6e6;
+  $negiShadow: #8c8c8c;
+  $negiBorder: #5ed422;
+  
+  .Greenonions {
+    width: 30px;
+    height: 77px;
+    background: $negi;
+    border-radius: 40px 20px 30px 10px;
+    box-shadow: inset -3px -5px 0 $negiShadow;
+    & .SukiyakiEntry_item_inner {
+      border: 1px solid $negiBorder;
+      position: absolute;
+      width: 20px;
+      height: 50px;
+      border-radius: 20px 5px 20px 5px;
+      top: 10px;
+      left: 2px;
+    }
+    &-1 {
+      top: 30px;
+      right: 58px;
+      transform: rotate(5deg) scale(0.8);
+      z-index: 3;
+    }
+    &-2 {
+      top: 28px;
+      left: 245px;
+      transform: rotate(14deg) scale(0.8);
+      z-index: 4; 
+    }
+    &-3 {
+      top: 57px;
+      left: 233px;
+      transform: rotate(5deg) scale(0.8);
+      z-index: 6;
+    }
+    &-4 {
+      top: 57px;
+      left: 257px;
+      transform: rotate(12deg) scale(0.8);
+      z-index: 5;
+    }
+    &-5 {
+      top: 57px;
+      left: 280px;
+      transform: rotate(14deg) scale(0.8);
+      z-index: 4;
+    }
+  }
+  
+  /*ninjin*/
+  $ninjin: #FF5F00;
+  $ninjinShadow: #F44A1C;
+  .ninjin {
+    width: 75px;
+    height: 100px;
+    background: $ninjin;
+    border-radius:80% 26px 60px 23px;
+    box-shadow: inset -10px 10px 0 $ninjinShadow;
+    transform: rotate(95deg) scale(.6);
+    &-1 {
+      bottom: 114px;
+      right: 137px;
+      z-index: 12;
+    }
+    &-2 {
+      top: 15px;
+      left: 140px;
+      transform: rotate(45deg) scale(.7);
+      box-shadow: inset -6px -13px 0 $ninjinShadow;
+      z-index: 11;
+    }
+    &-3 {
+      bottom: 120px;
+      left: 178px;
+      transform: rotate(135deg) scale(0.6);
+      z-index: 5;
+    }
+  }
+  /*tofu*/
+  $tofu: #e6e6e6;
+  $tofuShadow: #c5c5c5;
+  .tofu {
+    width: 70px;
+    height: 90px;
+    background: $tofu;
+    border-radius: 10px 21px 10px 24px;
+    box-shadow: inset -15px -3px 0 $tofuShadow;
+    &-1 {
+      bottom: 89px;
+      right: 60px;
+      transform: rotate(45deg) scale(0.7);
+      z-index: 7;
+    }
+    &-2 {
+      top: 116px;
+      right: 25px;
+      transform: rotate(80deg) scale(0.7);
+      z-index: 10;
+    }
+    &-3 {
+      bottom: 30px;
+      right: 50px;
+      transform: rotate(62deg) scale(0.8);
+    }
+  }
+  
+  /*mushroom*/
+  $mushroom: #423227;
+  $mushroomShadow: #84644e;
+  $mushroomcut: #795f5f;
+  
+  .mushroom {
+    width: 70px;
+    height: 72px;
+    background: $mushroom;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: inset -8px -1px 0 $mushroomShadow;
+    &-1 {
+      bottom: 64px;
+      right: 103px;
+      transform: rotate(85deg) scale(0.7);
+      z-index: 2;
+    }
+    &-2 {
+      bottom: 25px;
+      right: 104px;
+      transform: rotate(100deg) scale(0.7);
+      z-index: 10;
+    }
+    &-3 {
+      bottom: 46px;
+      right: 154px;
+      transform: rotate(80deg) scale(0.8);
+    }
+    & .mushroom-skew {
+          display: block;
+          width: 20px;
+          height: 20px;
+          background: $mushroomcut;
+          position: absolute;
+       &-1 {
+          transform:
+            rotate(0deg)
+            skew(
+              calc((90deg - 30deg) / 2),
+              calc((90deg - 30deg) / 2)
+            );
+          left: 17px;
+          top: 20px;
+       }
+       &-2 {
+          transform:
+            rotate(60deg)
+            skew(
+              calc((90deg - 30deg) / 2),
+              calc((90deg - 30deg) / 2)
+            );
+          top: 22px;
+          left: 17px;
+       }
+       &-3 {
+          transform:
+            rotate(120deg)
+            skew(
+              calc((90deg - 30deg) / 2),
+              calc((90deg - 30deg) / 2)
+            );
+          top: 21px;
+          left: 18px;
+       }
+    }
+  }
+  
+  /*shungiku*/
+  $shungiku: #7B9D52;
+  $shungikuShadow: #5a733c;
+  $shungikubar: #a5cc75;
+  
+  .shungiku {
+    position: absolute;
+    &-1 {
+      bottom: 86px;
+      left: 69px;
+      transform: rotate(-45deg);
+    }
+    &-2 {
+      bottom: 37px;
+      left: 39px;
+      transform: rotate(-70deg); 
+    }
+    &-3 {
+      bottom: 123px;
+      left: 107px;
+      transform: rotate(-20deg);
+    }
+    &:after {
+        content: "";
+      position: absolute;
+      width: auto;
+      border: 2px solid $shungikubar;
+      height: 92px;
+      left: 26px;
+      top: 38px;
+      z-index: 2;
+      border-radius: 10px 2px 10px 0px;
+    }
+    & .shungiku-skew {
+          display: block;
+          width: 15px;
+          height: 20px;
+          background: $shungiku;
+          position: absolute;
+          border-radius: 5px;
+            box-shadow: inset -8px -1px 0 $shungikuShadow;
+          z-index: 3;
+      &-1 {
+          transform: rotate(50deg) skew(calc((60deg - 3deg)));
+          left: 17px;
+          top: 20px;
+      }
+      &-2 {
+          transform: rotate(30deg) skew(calc((60deg - 3deg)));
+          left: 12px;
+          top: 30px;
+      }
+      &-3 {
+          transform: rotate(70deg) skew(calc((60deg - 3deg)));
+          left: 26px;
+          top: 30px;
+      }
+      &-4 {
+          transform: rotate(90deg) skew(calc((60deg - 0deg)));
+          left: 29px;
+          top: 32px;
+      }
+      &-5 {
+          transform: rotate(50deg) skew(calc((60deg - 3deg)));
+          left: 17px;
+          top: 50px;
+      }
+      &-6 {
+          transform: rotate(30deg) skew(calc((60deg - 3deg)));
+          left: 12px;
+          top: 60px;
+      }
+      &-7 {
+          transform: rotate(70deg) skew(calc((60deg - 3deg)));
+          left: 26px;
+          top: 60px;
+      }
+      &-8 {
+          transform: rotate(90deg) skew(calc((60deg - 0deg)));
+          left: 29px;
+          top: 62px;
+      }
+      &-9 {
+          transform: rotate(50deg) skew(calc((60deg - 3deg)));
+          left: 17px;
+          top: 80px;
+      }
+      &-10 {
+          transform: rotate(30deg) skew(calc((60deg - 3deg)));
+          left: 12px;
+          top: 90px;
+      }
+      &-11 {
+          transform: rotate(70deg) skew(calc((60deg - 3deg)));
+          left: 26px;
+          top: 90px;
+      }
+      &-12 {
+          transform: rotate(90deg) skew(calc((60deg - 0deg)));
+          left: 29px;
+          top: 92px;
+      }
+    }
+  }
+  
+  .yuge {
+    position: relative;
+    &:before,
+    &:after {
+      animation: yugeUp 5s ease-in-out infinite;
+      opacity: 0;
+      transform: translateY(-15px);
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      height: 200px;
+      top: -250px;
+      left: 60px;
+      border-right: 0px solid transparent;
+      border-top: 2px solid #fff;
+      border-left: 135px solid #fff;
+      border-bottom: 12px solid transparent;
+      filter: blur(35px);
+      z-index: 50;
+      transform: rotate(168deg) skewY(10deg);
+      border-radius: 80% 0 10% 10%;
+    }
+    &:after {
+      content: "";
+      height: 200px;
+      top: -180px;
+      right: 60px;
+      display: block;
+      position: absolute;
+      border-right: 0px solid transparent;
+      border-top: 2px solid #fff;
+      border-left: 125px solid #fff;
+      border-bottom: 12px solid transparent;
+      filter: blur(35px);
+      will-change: filter;
+      z-index: 50;
+      transform: rotate(168deg) skewY(10deg);
+      border-radius: 80% 0 10% 10%;
+    }
+  }
+  
+  @keyframes yugeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(-15px);
+    }
+    50% {
+      opacity: .7;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-250px);
+    }
+  }
+  
+  @keyframes rouxBubble {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  @keyframes rouxBubbleScale {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
