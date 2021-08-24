@@ -373,6 +373,36 @@ body {
   top: 92px;
 }
 
+.fire {
+  z-index: -1;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fire .fire-inner {
+  width: 70px;
+  height: 80px;
+  background: #ef662f;
+  border: 1px solid #ef662f;
+  box-sizing: border-box;
+  border-radius: 0 60% 100% 60%;
+  transform: rotate(45deg);
+  margin: 0 0px;
+  filter: blur(2px);
+  will-change: filter;
+  position: relative;
+  animation: shake 2s ease-in-out infinite;
+}
+
+.fire .fire-inner:nth-of-type(2), .fire .fire-inner:nth-of-type(4) {
+  top: 23px;
+}
+
+.fire .fire-inner:nth-of-type(3) {
+  top: 46px;
+}
+
 .yuge {
   position: relative;
 }
@@ -394,6 +424,7 @@ body {
   border-left: 135px solid #fff;
   border-bottom: 12px solid transparent;
   filter: blur(35px);
+  will-change: filter;
   z-index: 50;
   transform: rotate(168deg) skewY(10deg);
   border-radius: 80% 0 10% 10%;
@@ -415,6 +446,16 @@ body {
   z-index: 50;
   transform: rotate(168deg) skewY(10deg);
   border-radius: 80% 0 10% 10%;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: skewX(0) scale(1) rotate(40deg);
+  }
+  50% {
+    transform: skewX(5deg) scale(0.9) rotate(50deg);
+  }
 }
 
 @keyframes yugeUp {
