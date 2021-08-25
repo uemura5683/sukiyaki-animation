@@ -379,15 +379,31 @@
       will-change: filter;
       position: relative;
       animation: shake 2s ease-in-out infinite;
-      &:nth-of-type(2),
-      &:nth-of-type(4) {
-        top: 23px;
+      top: -20px;
+      left: -30px;
+      &:nth-of-type(2) {
+        top: 15px;
+        left: -50px;
       }
       &:nth-of-type(3) {
-        top: 46px;
+        top: 40px;
+        left: -60px;
       }
-      &:before {
-
+      &:nth-of-type(4) {
+        top: 46px;
+        left: -59px;
+      }
+      &:nth-of-type(5) {
+        top: 35px;
+        left: -55px;
+      }
+      &:nth-of-type(6) {
+        top: -76px;
+        left: 288px;
+      }
+      &:nth-of-type(7) {
+        top: -123px;
+        left: 260px;
       }
     }
   }
@@ -436,7 +452,7 @@
   @keyframes shake {
     0%,
     100% {
-      transform: skewX(0) scale(1) rotate( 40deg );
+      transform: skewX(5deg) scale(1) rotate( 40deg );
     }
     50% {
       transform: skewX(5deg) scale(0.9) rotate( 50deg );
@@ -455,7 +471,6 @@
       transform: translateY(-250px);
     }
   }
-  
   @keyframes rouxBubble {
     0% {
       width: 0;
